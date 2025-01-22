@@ -1,6 +1,6 @@
 # Riley Eaton's Personal Resume
 
-This repository is meant to store/serve my personal resume. The LaTeX source code used to build the PDF is provided here as well.
+This repository is meant to store/serve my personal resume. The LaTeX source code used to build the PDF is provided here.
 
 The version available here is a general CV, and more tailored versions may be used for differing applications.
 
