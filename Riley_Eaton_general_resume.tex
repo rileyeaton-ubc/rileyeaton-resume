@@ -96,9 +96,11 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% define various spacing variables
 \def\iconSpace{0.5pt}
 \def\iconSpaceBefore{0.1pt}
 \def\proficiencySpace{3pt}
+\def\projectSpaceBefore{1pt}
 
 %--------------- RESUME CONTENT ---------------
 
@@ -182,6 +184,7 @@
       \resumeProjectHeading
           {\textbf{Avionics Team, SRAD Flight Computer} $|$ \emph{C++, Arduino, Git}}{Oct 2024 -- Present}
           \resumeItemListStart
+            \vspace{\projectSpaceBefore}
             \resumeItem{Working with the Avionics team for the UBC Aerial Robotics and Rocketry Club}
             \resumeItem{Integrating pre-built flight computers into high-powered a rocket to control descent mechanisms for \textbf{Launch Canada 2025}}
             \resumeItem{Developing a custom flight computer from the ground-up using microcontrollers and prototyping platforms}
@@ -190,6 +193,7 @@
       \resumeProjectHeading
           {\textbf{Weather Web Application - SkySage} $|$ \emph{Python, JavaScript, RestAPIs, MySQL, GCP, Git}}{Nov 2024 -- Dec 2024}
           \resumeItemListStart
+            \vspace{\projectSpaceBefore}
             \resumeItem{Final project for UBC SWE course to provide current weather and forecasted trends using LLMs}
             \resumeItem{Our 4 person team completed the project in 6 weeks, resulting in over 80 branches, 1,050 commits, 120 source code files totalling \textbf{17,000} lines of code}
             \resumeItem{Achieved a \textbf{99\% final grade} for the project}
@@ -198,6 +202,7 @@
       \resumeProjectHeading
           {\textbf{Interactive Shell - IntelliShell} $|$ \emph{C, Git}}{Sep 2024}
           \resumeItemListStart
+            \vspace{\projectSpaceBefore}
             \resumeItem{A unix shell written in C with all the standard shell features, augmented with generative AI in order to assist the user in learning how to use the commands effectively}
             \resumeItem{Invalid commands are passed to a large language model (LLM), which summarizes the error message to provides helpful tips}
             \resumeItem{\textbf{3\textsuperscript{rd} place winner} for the UBC AI for Social Good Hackathon}
@@ -206,6 +211,7 @@
       \resumeProjectHeading
           {\textbf{Reinforcement Learning Tutorial} $|$ \emph{Python}}{Oct 2019}
           \resumeItemListStart
+            \vspace{\projectSpaceBefore}
             \resumeItem{Developed a Q-learning program in Python for pathfinding in first-year university}
             \resumeItem{Created a tutorial video for educational purposes}
             \resumeItem{Using no ML libraries, the algorithm and underlying equations were \textbf{implemented by hand}}
