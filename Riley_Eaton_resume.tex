@@ -1,0 +1,234 @@
+%-------------------------------
+% General SWE Resume in LaTeX
+% Author: Riley Eaton
+%-------------------------------
+
+% page sizing
+\documentclass[letterpaper,11.5pt]{article}
+% all required packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%---------- Alternative Font Options ----------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% serif
+% \usepackage{charter}
+
+% setting up style and footers/headers
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% fix margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% hyperlink appearance
+\urlstyle{same}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%------------- Custom Commands -------------
+% create a resume ordered list item
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% create subheading text on the resume
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% create a sub-subheading text on the resume
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% create a subheading for a project describing what was used to build it
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% various resume commands to end sections
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% define various spacing variables
+\def\iconSpace{0.5pt}
+\def\iconSpaceBefore{0.1pt}
+\def\proficiencySpace{3pt}
+\def\projectSpaceBefore{1pt}
+
+%--------------- RESUME CONTENT ---------------
+
+\begin{document}
+
+% Top of resume, where name and contact information are available as hyperlinks
+\begin{center}
+    \textbf{\Huge \scshape Riley Eaton} \\ \vspace{1pt}
+    \small \faMobile \hspace{\iconSpace} +1 (905) 767-0851 
+    $|$ \faEnvelope \hspace{\iconSpace} \href{mailto:ryeaton@student.ubc.ca}{\underline{ryeaton@student.ubc.ca}} 
+    $|$ \faLinkedinSquare \hspace{\iconSpace} \href{https://linkedin.com/in/rileyeaton}{\underline{linkedin.com/in/rileyeaton}} 
+    $|$ \faGithub \hspace{\iconSpace} \href{https://github.com/rileyeaton-ubc}{\underline{github.com/rileyeaton-ubc}}
+\end{center}
+
+%----------- Education Section ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    % UBC
+    \resumeSubheading
+      {The University of British Columbia}{2024 -- 2026}
+      {Master of Science in Computer Science; GPA: 4.20 on 4.33 scale}{British Columbia, Canada}
+      \resumeItemListStart
+        \resumeItem{Awarded the \emph{UBC Okanagan Graduate Research Scholarship} in recognition of academic achievement}
+        \resumeItem{Notable Graduate Coursework: Software Engineering, Modelling and Simulation, Computer Vision, Deep Learning, Data Wrangling for Medical Imaging for AI Applications}
+      \resumeItemListEnd
+    % Trent
+    \resumeSubheading
+      {Trent University}{2019 -- 2023}
+      {Bachelor of Science Honours in Computer Science; GPA: 3.70 on 4.33 scale}{Ontario, Canada}
+      \resumeItemListStart
+        \resumeItem{Awarded Dean's Honour Roll}
+        \resumeItem{Notable Coursework: Advanced Algorithms, Data Mining, Digital Logic, High-Performance Computing, Human-Computer Interaction, Comparative Programming Languages, Automata Theory, Operating Systems, Computer Crime and Forensics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- Experience Section -----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    % BC Cancer
+    \resumeSubheading
+      {Graduate Student, Software Engineering and Data Science}{Sep 2024 -- Present}
+      {BC Cancer}{Kelowna, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Research in medical imaging analysis for \textbf{early detection of lung and breast cancer}}
+        \resumeItem{Focus on building pipelines to de-identify patient data for future ML model development}
+      \resumeItemListEnd
+    % IBM SA
+    \resumeSubheading
+      {Solutions Architect, Data \& AI}{Jun 2023 -- Aug 2024}
+      {IBM}{Toronto, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Delivered technical solutions (custom demos, proof of concepts, workshops, minimum viable products) to stakeholders from hands-on teams to C-suite executives}
+        \resumeItem{\textbf{Achieved over 450\% of 2023 quota}, recognized in IBM's top 1\% for learning achievement and invited to IBM's Golden Circle in 2024}
+        \resumeItem{Promoted to oversee expanded territory (Manitoba, Saskatchewan, Atlantic Canada, and Ontario), and mentor new-hires}
+        \resumeItem{Managed IBM's Data Management, Data Fabric (governance, integration, etc.), and generative AI portfolios}
+      \resumeItemListEnd
+    % IBM Intern
+    \resumeSubheading
+      {Software Engineering Intern, Full-Stack}{May 2020 -- May 2023}
+      {IBM}{Toronto, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Began first full-time internship in summer of 2020 and subsequently \textbf{asked to return} for student-on-call positions and \textbf{two additional} summer internships}
+        \resumeItem{Worked in an agile development environment to build automation and productivity tools for sales enablement}
+        \resumeItem{Maintained and enhanced existing projects while taking on larger solo projects each term}
+        \resumeItem{The culmination of work from 2020 to 2022 resulted in an application that serves as IBM's new learning platform, adopted by \textbf{14,000+} sales professionals and \textbf{800+ sales executives worldwide}}
+      \resumeItemListEnd
+      % Trent grader
+      \resumeSubheading
+      {Undergraduate Grader, Computer Science}{Jan 2022 -- Apr 2022}
+      {Trent University}{Peterborough, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Graded assignments for \textbf{200 undergraduate students} in C\# programming}
+        \resumeItem{Provided detailed, constructive feedback to help students improve coding practices, with individual help on request}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- Projects Section -----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      % Avionics SRAD flight computer 
+      \resumeProjectHeading
+          {\textbf{Avionics Team, SRAD Flight Computer} $|$ \emph{C++, Arduino, ICs, Git}}{Oct 2024 -- Present}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeItem{Working with the Avionics team for the UBC Aerial Robotics and Rocketry Club}
+            \resumeItem{Integrating pre-built flight computers into high-powered a rocket to control descent mechanisms for \textbf{Launch Canada 2025}}
+            \resumeItem{Developing a custom flight computer from the ground-up using integrated circuits and prototyping platforms}
+          \resumeItemListEnd
+      % AI weather prediction - SkySage
+      \resumeProjectHeading
+          {\textbf{Weather Web Application - SkySage} $|$ \emph{Python, JavaScript, RestAPIs, MySQL, GCP, Git}}{Nov 2024 -- Dec 2024}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeItem{Final project for UBC SWE course to provide current weather and forecasted trends using LLMs}
+            \resumeItem{Worked cohesively as a team of four, following agile development principles to complete the project in 6 weeks, resulting in over 80 git branches, 1,050 commits, and 120 source code files totalling \textbf{17,000} lines of code}
+            \resumeItem{Achieved a \textbf{99\% final grade} for the project}
+          \resumeItemListEnd
+      % IntelliShell
+      \resumeProjectHeading
+          {\textbf{Interactive Shell - IntelliShell} $|$ \emph{C, Unix, LLMs, Git}}{Sep 2024}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeItem{A unix shell written in C with all the standard shell features, augmented with generative AI in order to assist the user in learning how to use the commands effectively}
+            \resumeItem{Invalid commands are passed to a large language model (LLM), which summarizes the error message to provides helpful tips}
+            \resumeItem{\textbf{3\textsuperscript{rd} place winner} for the UBC AI for Social Good Hackathon}
+          \resumeItemListEnd
+      % Reinforcement learning tutorial
+      \resumeProjectHeading
+          {\textbf{Reinforcement Learning Tutorial} $|$ \emph{Python}}{Oct 2019}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeItem{Developed a Q-learning program for pathfinding in first-year university}
+            \resumeItem{Created a tutorial video to educate others who are learning to implement similar machine learning (ML) algorithms}
+            \resumeItem{Using no ML libraries, the algorithm and underlying equations were \textbf{implemented by hand}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%----------- Skills Section -----------
+\section{Proficiencies}
+\vspace{2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical Skills}{: Avionics, Telemetry, Deep Learning Techniques, Relational Databases, NoSQL Databases (MongoDB), Data Pipelines, Medical Informatics, DICOM Standard, Unix/Linux} \vspace{\proficiencySpace} \\ 
+     \textbf{Software Engineering}{: Git Best Practices, Agile, Kanban, Cloud Deployment, Backend, MLOps, CI/CD, REST APIs} \vspace{\proficiencySpace} \\ 
+     \textbf{Languages}{: Python, MATLAB, R, C, Arduino, $C\#$, Java, JavaScript, HTML, CSS, PHP, SQL, MIPS Assembly, LaTeX} \vspace{\proficiencySpace} \\
+     \textbf{Developer Tools}{: Docker, Git, GitHub Actions, AWS, IBM Cloud, .NET Framework, Jupyter, Jira, Trello} \vspace{\proficiencySpace} \\
+     \textbf{Soft Skills}{: Technical Sales, Client Relations, Public Speaking, Teaching, Mentorship, Adaptability}
+    }}
+ \end{itemize}
+
+\end{document}
