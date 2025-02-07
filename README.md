@@ -1,6 +1,6 @@
 # Riley Eaton's Resume
 
-**This repository is intended to serve my personal resume.** The document is written in LaTeX, which is used to build **[the provided PDF](./Riley_Eaton_resume.pdf).** 
+**This repository is intended to serve my personal resume.** The document is written in LaTeX, which is used to build **[the included PDF](./Riley_Eaton_resume.pdf).** 
 
 The version available here is general, and more tailored versions may be used for different job applications.
 
