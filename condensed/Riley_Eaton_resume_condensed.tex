@@ -1,7 +1,7 @@
 %-------------------------------
 % General SWE Resume in LaTeX
 % Author: Riley Eaton
-% Many sections of the code meant for formatting are from:
+% Many sections of the code used for formatting are from:
 % https://github.com/jakegut/resume
 %-------------------------------
 
@@ -53,6 +53,8 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+
+
 % ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
@@ -66,9 +68,9 @@
 
 % create subheading text on the resume
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-0.9pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\small#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -108,7 +110,7 @@
 
 % Top of resume, where name and contact information are available as hyperlinks
 \begin{center}
-    \textbf{\Huge \scshape Riley Eaton} \\ \vspace{2pt}
+    \fontsize{18}{18}\textbf{\scshape Riley Eaton} \\ \vspace{2pt}
     \small \faPhoneSquare \hspace{\iconSpace} +1 (905) 767-0851
     $|$ \faEnvelope \hspace{\iconSpace} \underline{\href{mailto:ryeaton@student.ubc.ca}{ryeaton@student.ubc.ca}}
     $|$ \faLinkedinSquare \hspace{\iconSpace} \underline{\href{https://linkedin.com/in/rileyeaton}{linkedin.com/in/rileyeaton}}
@@ -124,7 +126,6 @@
       {Master of Science in Computer Science; GPA: 4.20 on 4.33 scale}{Kelowna, BC}
       \resumeItemListStart
         \resumeItem{Awarded the \textbf{UBC Okanagan Graduate Research Scholarship} in recognition of academic achievement}
-        \resumeItem{Notable coursework: Software Engineering, Modelling and Simulation, Computer Vision, Deep Learning, Data Wrangling in Medical Imaging for AI Applications}
       \resumeItemListEnd
     % Trent
     \resumeSubheading
@@ -132,7 +133,6 @@
       {Bachelor of Science Honours in Computer Science; GPA: 3.70 on 4.33 scale}{Peterborough, ON}
       \resumeItemListStart
         \resumeItem{Named to the Dean's Honour Roll}
-        \resumeItem{Notable coursework: Advanced Algorithms, Data Mining, Digital Logic, High-Performance Computing, Human-Computer Interaction, Comparative Programming Languages, Automata Theory, Operating Systems, Computer Crime and Forensics}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -141,24 +141,31 @@
   \resumeSubHeadingListStart
     % BC Cancer
     \resumeSubheading
-      {Graduate Student, Software Engineering and Data Science}{Sep 2024 -- Present}
+      {Graduate Student, Software Developer}{Sep 2024 -- Present}
       {BC Cancer}{Kelowna, BC}
       \resumeItemListStart
         \resumeItem{Conducting research in medical imaging analysis for early detection of \textbf{lung} and \textbf{breast} cancer}
-        \resumeItem{Focusing on building pipelines to de-identify patient data to enable future ML model development}
+        \resumeItem{Engineering pipelines to de-identify (pseudonymize) patient data to enable future ML model development}
+      \resumeItemListEnd
+    % Graduate Council
+    \resumeSubheading
+      {Graduate Student Advisory Council Member}{Oct 2024 -- Present}
+      {The University of British Columbia}{Kelowna, BC}
+      \resumeItemListStart
+        \resumeItem{Advocating for graduate education and initiatives on campus as the faculty of Science representative to the Dean}
       \resumeItemListEnd
     % IBM SA
     \resumeSubheading
       {Solutions Architect, Data and AI}{Jun 2023 -- Aug 2024}
       {IBM}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Developed technical solutions (demos, proof of concepts, workshops, MVPs) for clients, presenting to teams in HR, finance, research, development, and many individual executives. Covered data management, data fabric, and generative AI portfolios}
+        \resumeItem{Developed custom demos, proof of concepts, workshops, and MVPs for clients, presenting to organizations or individual executives. Covered data management, data fabric, and generative AI product portfolios}
         \resumeItem{Exceeded 2023 quota by \textbf{over 450\%}, achieved \textbf{top 1\%} for yearly learning hours, and invited to IBM's Golden Circle 2024}
         \resumeItem{\textbf{Promoted} after 9 months to oversee territory outside of Ontario (MB, SK, NS, NB, NL, and P.E.I.)}
       \resumeItemListEnd
     % IBM Intern
     \resumeSubheading
-      {Software Engineering Intern, Full-Stack}{May 2020 -- May 2023}
+      {Software Developer Intern, Full-Stack}{May 2020 -- May 2023}
       {IBM}{Markham, ON}
       \resumeItemListStart
         \resumeItem{Collaborated in an Agile development team to build automation and productivity tools for sales enablement}
@@ -184,8 +191,7 @@
           \resumeItemListStart
             \vspace{\projectSpaceBefore}
             \resumeItem{Subteam of the UBC Aerial Robotics and Rocketry Club, convening weekly to plan and solve new problems collaboratively}
-            \resumeItem{Developing a custom avionics system from the ground-up using integrated circuit components and prototyping platforms}
-            \resumeItem{Integrating COTS flight computer into student-built high-powered hybrid rocket for telemetry and descent control during \textbf{Launch Canada 2025}}
+            \resumeItem{Developing a custom avionics system for telemetry and descent control of high-power rocket during \textbf{Launch Canada 2025}}
           \resumeItemListEnd
       % AI weather prediction - SkySage
       \resumeProjectHeading
@@ -218,8 +224,8 @@
 \vspace{2pt}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Technical Skills}{: Avionics, Fault Tolerance, Telemetry, Deep Learning Techniques, Relational Databases, NoSQL Databases (MongoDB), Data Pipelines, Medical Informatics, DICOM Standard, Unix/Linux} \vspace{\proficiencySpace} \\ 
-     \textbf{Software Engineering}{: Version Control (Git), Agile, Kanban, Cloud Deployment, Backend, MLOps, CI/CD, REST APIs} \vspace{\proficiencySpace} \\ 
+     \textbf{Technical Skills}{: Avionics, Fault Tolerance, Telemetry, Applied Computer Vision, Deep Learning Architectures, Relational Databases, NoSQL Databases (MongoDB), Data Pipelines, Medical Informatics, DICOM Standard, Unix/Linux} \vspace{\proficiencySpace} \\ 
+     \textbf{Software Engineering}{: Version Control (Git), Agile, Kanban, TDD, Cloud Deployment, Backend, MLOps, CI/CD, REST APIs} \vspace{\proficiencySpace} \\ 
      \textbf{Languages}{: Python, MATLAB, R, C, Arduino, $C\#$, Java, JavaScript, HTML, CSS, PHP, SQL, MIPS Assembly, LaTeX} \vspace{\proficiencySpace} \\
      \textbf{Developer Tools}{: Docker, GitHub Actions, AWS, IBM Cloud, .NET Framework, Jupyter, Jira, Trello} \vspace{\proficiencySpace} \\
      \textbf{Soft Skills}{: Technical Writing, Technical Sales, Client Relations, Public Speaking, Teaching, Mentorship, Adaptability}
