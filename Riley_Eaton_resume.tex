@@ -149,8 +149,8 @@
       {Graduate Student, Data Engineer}{Sep 2024 -- Present}
       {BC Cancer}{Kelowna, BC}
       \resumeItemListStart
-        \resumeItem{Conducting research in medical imaging analysis for early detection of \textbf{lung} and \textbf{breast} cancer}
-        \resumeItem{Engineering pipelines to de-identify (pseudonymize) patient data to enable future ML model development}
+        \resumeItem{Conducting research in medical imaging analysis for the \textbf{BC Lung Screening} and \textbf{Breast Cancer Screening} programs, collaborating with radiologists, medical physicists, and data scientists}
+        \resumeItem{Engineering pipelines to de-identify and curate clinical CT and mammography datasets to enable future AI model development and performance evaluation}
       \resumeItemListEnd
     % Graduate Council
     \resumeSubheading
@@ -173,9 +173,8 @@
       {Software Developer Intern, Full-Stack}{May 2020 -- May 2023}
       {IBM}{Markham, ON}
       \resumeItemListStart
-        \resumeItem{Collaborated in an Agile development team to build automation and productivity tools for sales enablement}
-        \resumeItem{Began first full-time internship in summer 2020 and subsequently \textbf{asked to return} for student-on-call positions and \textbf{two additional} summer internships, working with larger teams each term}
-        \resumeItem{Work from 2020 to 2022 culminated in an application that now serves as IBM's learning platform, adopted by over \textbf{14,000} sales professionals and \textbf{800} executives worldwide}
+        \resumeItem{Collaborated in an Agile team to build automation and productivity tools, culminating in an application now serving as IBM's learning platform for over \textbf{14,000} sales professionals and \textbf{800} executives worldwide}
+        \resumeItem{Completed three internships from 2020 to 2023, \textbf{asked to return} each term to take on expanded responsibilities with larger teams}
       \resumeItemListEnd
       % Trent grader
       \resumeSubheading
@@ -190,17 +189,16 @@
 %----------- Projects Section -----------
 \section{Projects}
     \resumeSubHeadingListStart
-      % Avionics SRAD flight computer 
+      % BC Cancer De-identification
       \resumeProjectHeading
-          {\textbf{Avionics System, SRAD Flight Computer} $|$ \textit{C++, Arduino, ICs, Git}}{Oct 2024 -- Present}
+          {\textbf{CT De-Identification Pipeline} $|$ \textit{$C\#$, DICOM, $.$NET}}{Jan 2025 -- Present}
           \resumeItemListStart
             \vspace{\projectSpaceBefore}
-            \resumeProjectItem{Subteam of the UBC Aerial Robotics and Rocketry Club, convening weekly to plan and solve new problems collaboratively}
-            \resumeProjectItem{Developing a custom avionics system for telemetry and descent control of high-power rocket during \textbf{Launch Canada 2025}}
+            \resumeProjectItem{Building applications to collect, de-identify, and store lung screening CT data from all BC health authorities, producing a research-ready DICOM dataset for AI model development}
           \resumeItemListEnd
       % Jersey Number Recognition
       \resumeProjectHeading
-          {\href{https://github.com/rileyeaton-ubc/COSC519-Jersey-Number-Recognition}{\textbf{Deep Learning Pipeline: Jersey Number Recognition} \faGithub} \hspace{\iconSpace}$|$ \textit{Python, PyTorch, OpenCV, Git}}{Sep 2025 -- Dec 2025}
+          {\href{https://github.com/rileyeaton-ubc/COSC519-Jersey-Number-Recognition}{\textbf{Deep Learning Pipeline: Jersey Number Recognition} \faGithub} \hspace{\iconSpace}$|$ \textit{Python, PyTorch, OpenCV, Git}}{Jan 2025 -- Apr 2025}
           \resumeItemListStart
             \vspace{\projectSpaceBefore}
             \resumeProjectItem{Final project for UBC's Deep Learning course: Improve a published multi-stage deep learning pipeline for the SoccerNet Jersey Number Recognition Challenge using PARSeq, ViTPose, and a custom ResNet-34 legibility classifier.}
@@ -214,27 +212,25 @@
             \resumeProjectItem{A Unix shell written in C with all standard features, augmented with generative AI to help users learn the command line linterface. Invalid commands are processed by a large language model, which summarizes errors and suggests fixes.}
             \resumeProjectItem{\textbf{Won 3\textsuperscript{rd} place} at UBC's AI for Social Good Hackathon}
           \resumeItemListEnd
-      % Reinforcement learning tutorial
-      \resumeProjectHeading
-          {\href{https://youtu.be/e59wArs9kp4}{\textbf{Reinforcement Learning Tutorial} \faYoutubePlay} \hspace{\iconSpace}$|$ \textit{Python}}{Oct 2019}
-          \resumeItemListStart
-            \vspace{\projectSpaceBefore}
-            \resumeProjectItem{Developed a Q-learning program for pathfinding in first-year university, along with a tutorial video to educate others}
-            \resumeProjectItem{Used no ML libraries: the algorithm and underlying equations were implemented \textbf{manually}}
-          \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%----------- Skills Section -----------
-\section{Proficiencies}
-\vspace{2pt}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Technical Skills}{: Parallel Computing, Applied Computer Vision, Deep Learning Architectures, Relational Databases, NoSQL Databases (MongoDB), Data Pipelines, Medical Informatics, DICOM Standard, Unix/Linux, Fault Tolerance, Telemetry} \vspace{\proficiencySpace} \\ 
-     \textbf{Software Engineering}{: Version Control (Git), Agile, Kanban, TDD, Cloud Deployment, Backend, MLOps, CI/CD, REST APIs} \vspace{\proficiencySpace} \\ 
-     \textbf{Languages}{: Python, MATLAB, R, C, CUDA, Arduino, $C\#$, Java, JavaScript, HTML, CSS, PHP, SQL, MIPS Assembly, LaTeX} \vspace{\proficiencySpace} \\
-     \textbf{Developer Tools}{: Docker, GitHub Actions, AWS, IBM Cloud, .NET Framework, Jupyter, Jira, Trello, Markdown} \vspace{\proficiencySpace} \\
-     \textbf{Soft Skills}{: Technical Writing, Technical Sales, Client Relations, Public Speaking, Teaching, Mentorship, Adaptability}
-    }}
- \end{itemize}
+%----------- Contributions Section -----------
+\section{Contributions}
+    \resumeSubHeadingListStart
+      % CT Dataset Preparation Report
+      \resumeProjectHeading
+          {\href{https://github.com/rileyeaton-ubc/CT-Dataset-Preparation-Report/tree/main}{\textbf{Preparing CT Imaging Datasets for Deep Learning in Lung Nodule Analysis} \faGithub} \hspace{\iconSpace}}{Aug 2025}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeProjectItem{A report on CT dataset preparation methods for lung nodule detection, replicating preprocessing pipeline steps using BC Cancer lung screening data and evaluating their impact on downstream deep learning model development}
+          \resumeItemListEnd
+      % De-Identification Report
+      \resumeProjectHeading
+          {\href{https://github.com/rileyeaton-ubc/Medical-De-Identification-Report?tab=readme-ov-file}{\textbf{De-Identification of Medical Imaging Data} \faGithub} \hspace{\iconSpace}}{Apr 2025}
+          \resumeItemListStart
+            \vspace{\projectSpaceBefore}
+            \resumeProjectItem{A literary review of de-identification techniques for medical imaging data, analyzing methods that remove patient-identifying information while preserving data utility for clinical research}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 \end{document}
